@@ -1,2 +1,2 @@
 # oogiri
-chat
+Makign oogiri-chat
