@@ -27,4 +27,15 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('say_hello');
  	}
+
+  public function getData()
+  {
+    //modelの呼び出し
+    $this->load->model('Post', 'post', TRUE);
+
+    //モデルか投稿一覧取得関数を呼び出し
+    $data = $this->post->getPost();
+
+    var_dump($data);
+  }
 }
